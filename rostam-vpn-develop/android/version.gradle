@@ -1,0 +1,6 @@
+buildscript {
+    ext {
+        rostamVpnVersionCode = 11
+        rostamVpnVersionName = '1.5.1'
+    }
+}

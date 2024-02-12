@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/digital_safety_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_close"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/snackbar_info"
+        android:orientation="horizontal"
+        android:paddingTop="36dp"
+        android:paddingBottom="36dp"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_alert_info" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:lineHeight="25sp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textColor="@color/white"
+                android:letterSpacing="-0.018"
+                android:lineSpacingExtra="8sp"
+                android:layout_weight="1"
+                android:text="@string/digital_safety_tip_title" />
+
+            <TextView
+                android:id="@+id/digital_safety_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="25sp"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textColor="@color/white"
+                android:letterSpacing="-0.018"
+                android:lineSpacingExtra="8sp"
+                android:layout_weight="1"
+                android:text="تصدیق هویت چندعاملی (2FA)" />
+
+            <TextView
+                android:id="@+id/digital_safety_short_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="25sp"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:textColor="@color/white"
+                android:letterSpacing="-0.018"
+                android:lineSpacingExtra="8sp"
+                android:layout_weight="1"
+                android:text="یک روش تأیید هویت ادعایی کاربر است که در آن کاربر  تنها پس از ارائه ۲ یا چند قطعه شواهد (یا عوامل) به یک مکانیزم احراز هویت دسترسی می‌یابد." />
+
+            <TextView
+                android:id="@+id/digital_safety_read_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                android:letterSpacing="-0.018"
+                android:lineSpacingExtra="8sp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:clickable="true"
+                android:text="@string/digital_safety_tip_read_more" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

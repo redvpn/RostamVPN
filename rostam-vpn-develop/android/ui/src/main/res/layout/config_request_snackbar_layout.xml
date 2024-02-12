@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/snackbar_error"
+    android:orientation="horizontal"
+    android:paddingTop="36dp"
+    android:paddingBottom="36dp"
+    android:paddingRight="24dp"
+    android:paddingLeft="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_alert_error" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineHeight="25sp"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:textColor="@color/white"
+            android:letterSpacing="-0.018"
+            android:lineSpacingExtra="8sp"
+            android:layout_weight="1"
+            android:text="@string/vpn_connection_failure" />
+
+        <TextView
+            android:id="@+id/config_request_mailto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:letterSpacing="-0.018"
+            android:lineSpacingExtra="8sp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:text="@string/config_request_email" />
+    </LinearLayout>
+</LinearLayout>
+
